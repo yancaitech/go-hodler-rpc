@@ -1,0 +1,12 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BCH.CreateRawTx",
+	"params": [{
+		"mainnet": true,
+		"inputs": [{"txid":"fc4e9ecef8c8f0f9bf128ee4364f1fdc2c9b3d18ba50ac3563eb17916289bfb8","vout":0}],
+		"amounts": {"qz8t3ce2wpgd3qdw7dkv0w7gdf83jnsmzu4mcm83ea":0.1075}
+		}]
+}

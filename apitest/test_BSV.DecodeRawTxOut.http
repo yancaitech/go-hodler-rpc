@@ -1,0 +1,14 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BSV.DecodeRawTxOut",
+	"params": [{
+		"mainnet": true,
+		"fromAddr": "qrmk58aupd7fefgld9hn495cd7e2d0nqeym92evt20",
+		"toAddr": "qp5r05wadtgxk4hukly9c2qtu9unva77csr3yl66pv",
+		"totalInValue": 110000000,
+		"rawtx": "0100000001f77eb6b1e94f1c920b6c3ebeecce1fa9ba942c54bff8e72cf0813bd1fca7cf6b0000000000ffffffff0200e1f505000000001976a9146837d1dd6ad06b56fcb7c85c280be1793677dec488ac706f9800000000001976a914f76a1fbc0b7c9ca51f696f3a96986fb2a6be60c988ac00000000"
+		}]
+}

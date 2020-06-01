@@ -1,0 +1,13 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BTC.VerifyMessage",
+	"params": [{
+		"address": "1MzPUeS1g8cjFiTqkbvL2uSLegxPmcGodq",
+		"message": "123",
+		"signature": "IO6y4VnPXdokcSy4J/LDCVVEp1HHf58kV2e+bWNwVOJEVA8ZiK6pmfNP8hmxlx086zQ/c3+du4LxqUV3vn6mD08=",
+		"mainnet": true
+		}]
+}

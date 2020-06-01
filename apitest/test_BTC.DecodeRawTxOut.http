@@ -1,0 +1,14 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BTC.DecodeRawTxOut",
+	"params": [{
+		"mainnet": false,
+		"fromAddr": "n1UkzpYwrZBtxxDPyvEcv9rT8gn1w3Mjsi",
+		"toAddr": "mfiNsjT92duyPZhj7cRTn1BjuVhjbfvKTX",
+		"totalInValue": 66999699,
+		"rawtx": "0100000001078fd1241ac04cb5c181acc2b990f2bb72b19de0da138bf11a7c27f7fe1eca01010000006a4730440220542622dca57ea3538b8281a0bbd38d78de17e65cd6e19b589a27850b7c767e900220185f079a96b95cb2f4d582b24c92aff1eb80bed748f5a1fa69aa4b715936b5e8012103ab7f04c389bdbfa15e043acf293890cb1ac4fa615b840f7e8825b49d61019d64ffffffff0210270000000000001976a9140229183053e34d56ea0ea237f9236dab5c6e489d88ac202efe03000000001976a914daf840dddbfd5e6dcdb6fbff21f8f3889308ea9488ac00000000"
+		}]
+}

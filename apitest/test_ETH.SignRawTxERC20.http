@@ -1,0 +1,20 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "ETH.SignRawTxERC20",
+	"params": [{
+		"entropy": "7dfe828a0d2755bf7c8c2c4f1949aad888e05fbecd726ae4c7ea4b3fdfcc113f",
+		"seed": "",
+		"m1": 0,
+		"m2": 0,
+		"nonce": "123",
+		"gasLimit": "21000",
+		"gasPrice": "7500000000",
+		"value": "1670000000000000000",
+		"chainID": "1",
+		"contract": "0x4592d8f8d7b001e72cb26a73e4fa1806a51ac79d",
+		"toAddress": "0x28b149020d2152179873ec60bed6bf7cd705775d"
+		}]
+}

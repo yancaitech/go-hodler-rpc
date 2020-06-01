@@ -1,0 +1,14 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BTC.CreateRawTx",
+	"params": [{
+		"mainnet": false,
+		"inputs": [{"txid":"2c55713fc2acd4526fd9da166eaef552a300770360c46e99c8d08ae5970890f6","vout":0},
+				   {"txid":"18f42531fdac06251a578cad175f22b905e3865430c0c32a079cd8b609ce2e01","vout":0},
+				   {"txid":"c782a87cb2e989d4c29813cc98dd98f05349fa6bbafb68fc6ffb15db690fc68b","vout":0}],
+		"amounts": {"n1UkzpYwrZBtxxDPyvEcv9rT8gn1w3Mjsi":0.629837,"n1jy1uKm17nYMGQ6koPffYbh3swWANdUHs":0.25}
+		}]
+}

@@ -1,0 +1,16 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BSV.SignRawTx",
+	"params": [{
+		"entropy": "1EE60AB0A1AA13565CFE05866275A7B0A9074E445F447D038818EF41501C80ED",
+		"seed": "",
+		"m1": 20202064,
+		"m2": 0,
+		"compresspubkey": true,
+		"mainnet": true,
+		"rawtx": "0100000001f77eb6b1e94f1c920b6c3ebeecce1fa9ba942c54bff8e72cf0813bd1fca7cf6b0000000000ffffffff01706f9800000000001976a9142d568c11652fdc897f8a3f4cc0130a36561e455188ac00000000:[9990000]"
+		}]
+}
