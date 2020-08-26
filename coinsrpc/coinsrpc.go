@@ -37,6 +37,9 @@ type XRP struct{}
 // EOS entry
 type EOS struct{}
 
+// FIL entry
+type FIL struct{}
+
 const (
 	// ServeTLS mode
 	ServeTLS = true
@@ -98,6 +101,10 @@ func RPCMain() {
 		fmt.Println(err)
 	}
 	err = s.RegisterService(new(EOS), "")
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = s.RegisterService(new(FIL), "")
 	if err != nil {
 		fmt.Println(err)
 	}
