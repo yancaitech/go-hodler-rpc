@@ -1,0 +1,10 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "DOT.DecodeRawTxOut",
+	"params": [{
+		"rawtx": "0x2d028416cf45cddc1990e223a3a941ce73bd27dcbfcffe5827359a184b5b0e1731014a018e961da1ad6f9b62bb1520d0e6cee56f0132a857aa0da2ee8be2b9f101a83a60b604dfefd2d9d4a57769539d6216cf702efa5c20281006340f4cb84f381dd48a0000040500a238a006c61bc444dd6b1bb8f9126a0b393ffc0b6d0cf2a3b5340adf315db657828d5b00"
+		}]
+}

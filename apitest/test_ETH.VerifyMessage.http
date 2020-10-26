@@ -1,0 +1,12 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "ETH.VerifyMessage",
+	"params": [{
+		"address": "0xe8f783e8ddf7953570ef8df5ba6515eab8b0e80a",
+		"message": "123",
+		"signature": "0x943247862ca94012c256202e86fb0b46c80f5a4781081ef7dd8363e9e7bda97410f7032204427abb370d10a37f4741a0a20c7338a2c5fd661ef4c9a2ab5f069000"
+		}]
+}

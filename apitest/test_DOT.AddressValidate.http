@@ -1,0 +1,10 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "DOT.AddressValidate",
+	"params": [{
+		"address": "131MxjL3kiXGupP8FiQMASWJ2mWLtfk6PNzfswi7HP8bpLvx"
+		}]
+}

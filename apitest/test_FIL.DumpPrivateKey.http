@@ -1,0 +1,13 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "FIL.DumpPrivateKey",
+	"params": [{
+		"entropy": "1EE60AB0A1AA13565CFE05866275A7B0A9074E445F447D038818EF41501C80ED",
+		"seed": "",
+		"m1": 20202064,
+		"m2": 0
+		}]
+}

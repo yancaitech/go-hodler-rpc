@@ -1,0 +1,11 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "ETH.DecodeRawTxOut",
+	"params": [{
+		"chainID": "1",
+		"rawtx": "f865801782627094be8f1a7c5754bb72a6c0b998005056f6ae7c21d3865af3107a40008025a07fb293ac7fa46458fb65b84c7ccb08b42edf53ed1a256c544399489fe0ca28e5a0718ca7345047f16438f29cbfc5119a937a472ca929ca9d9396cb96a6e6875ac7"
+		}]
+}

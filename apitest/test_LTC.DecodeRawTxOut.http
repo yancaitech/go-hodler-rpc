@@ -1,0 +1,14 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "LTC.DecodeRawTxOut",
+	"params": [{
+		"mainnet": true,
+		"fromAddr": "LMuDB42dAPtbeqKjepWNE9kgB1n3PH8p4C",
+		"toAddr": "LYUsiRRXCXZp8FY9C2H9v4zAuysrXvpj29",
+		"totalInValue": 123000000,
+		"rawtx": "0100000001f77eb6b1e94f1c920b6c3ebeecce1fa9ba942c54bff8e72cf0813bd1fca7cf6b0000000000ffffffff0280924507000000001976a914916c13fa0f169e669e1706f2904fd3d61cb5f58188aca0bb0d00000000001976a9141d5cebd299654d1d23ae3392bb67e079c974116888ac00000000"
+		}]
+}

@@ -1,0 +1,16 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BTC.SignRawTx",
+	"params": [{
+		"entropy": "1EE60AB0A1AA13565CFE05866275A7B0A9074E445F447D038818EF41501C80ED",
+		"seed": "",
+		"m1": 20202064,
+		"m2": 0,
+		"compresspubkey": true,
+		"mainnet": true,
+		"rawtx": "0100000001f77eb6b1e94f1c920b6c3ebeecce1fa9ba942c54bff8e72cf0813bd1fca7cf6b000000006b483045022100a73c237f86002585bcb1bf4ecf8b3cec4252731aff924e624f7d61dae7923973022025ec40302be97221df924865863f19c28d93a984888cd3640761316fa2e806f2012102a59d1c96e1ab60478fe9d6ed0a4869f619c4e4abb9ef94c7c46beca7ea9cb20effffffff01706f9800000000001976a9142d568c11652fdc897f8a3f4cc0130a36561e455188ac00000000"
+		}]
+}

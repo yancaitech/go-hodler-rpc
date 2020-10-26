@@ -1,0 +1,13 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "XRP.DumpPrivateKey",
+	"params": [{
+		"entropy": "7dfe828a0d2755bf7c8c2c4f1949aad888e05fbecd726ae4c7ea4b3fdfcc113f",
+		"seed": "",
+		"m1": 0,
+		"m2": 0
+		}]
+}

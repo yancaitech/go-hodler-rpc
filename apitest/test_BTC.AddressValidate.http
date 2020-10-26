@@ -1,0 +1,11 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "BTC.AddressValidate",
+	"params": [{
+		"address": "bc1q9q8f44dc3zgwx0vyxv908ml48aca4lddu0j2vh",
+		"mainnet": true
+		}]
+}

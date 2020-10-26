@@ -40,13 +40,16 @@ type EOS struct{}
 // FIL entry
 type FIL struct{}
 
+// DOT entry
+type DOT struct{}
+
 const (
 	// ServeTLS mode
 	ServeTLS = true
 )
 
 var server *http.Server
-var serverPort int = 34911
+var serverPort = 34911
 
 // StartRPCMain func
 func StartRPCMain(port int) {
@@ -105,6 +108,10 @@ func RPCMain() {
 		fmt.Println(err)
 	}
 	err = s.RegisterService(new(FIL), "")
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = s.RegisterService(new(DOT), "")
 	if err != nil {
 		fmt.Println(err)
 	}

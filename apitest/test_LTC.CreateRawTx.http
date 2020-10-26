@@ -1,0 +1,12 @@
+POST https://127.0.0.1:34911/ HTTP/1.1
+content-type: application/json
+
+{
+	"id": 1,
+	"method": "LTC.CreateRawTx",
+	"params": [{
+		"mainnet": true,
+		"inputs": [{"txid":"6bcfa7fcd13b81f02ce7f8bf542c94baa91fceecbe3e6c0b921c4fe9b1b67ef7","vout":0}],
+		"amounts": {"LYUsiRRXCXZp8FY9C2H9v4zAuysrXvpj29":1.22,"LMuDB42dAPtbeqKjepWNE9kgB1n3PH8p4C":0.009}
+		}]
+}
