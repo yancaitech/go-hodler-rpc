@@ -21,6 +21,7 @@ type BTCEntropyToAddressArgs struct {
 // BTCAddressReply struct
 type BTCAddressReply struct {
 	Address string `json:"address"`
+	Pubkey  string `json:"pubkey"`
 	M1      uint32 `json:"m1"`
 	M2      uint32 `json:"m2"`
 }
@@ -71,9 +72,14 @@ func (h *BTC) EntropyToAddress(r *http.Request, args *BTCEntropyToAddressArgs, r
 		if err != nil {
 			return err
 		}
+		pubk, err := key.BitcoinPubKeyString(args.CompressPubKey)
+		if err != nil {
+			return err
+		}
 
 		var adr BTCAddressReply
 		adr.Address = addr
+		adr.Pubkey = pubk
 		adr.M1 = m1
 		adr.M2 = m2
 		addrs = append(addrs, adr)
